@@ -62,7 +62,7 @@
         <!-- YeWenliang@MULTIMEDIA.AUDIODRIVER, 2021/08/27, Add for smartpa power monitor -->
         <param key="support_smartpa_pm" value="true"/>
         <!-- Zhao.Pan@MULTIMEDIA.AUDIODRIVER.FEEDBACK, 2022/04/12, add for speaker err feedback -->
-        <param key="oplus_check_speaker" value="false"/>
+        <param key="oplus_check_speaker" value="true"/>
         <!-- Zhao.Pan@MULTIMEDIA.AUDIODRIVER.FEEDBACK, 2022/04/12, add for lvvefq err feedback -->
         <param key="oplus_lvve_err_fb" value="true"/>
         <!-- YeWenliang@MULTIMEDIA.AUDIODRIVER, 2021/08/31, Add for ear protection -->
@@ -78,7 +78,6 @@
         <!-- Jie.Du@MULTIMEDIA.AUDIODRIVER, 2023/02/22, add for support call record in ocar mode -->
         <param key="ocar_mode_support" value="true"/>
         <!-- Nan.Zhong@MULTIMEDIA.AUDIODRIVER.SMARTPA, 2023/04/28, add for speaker protection -->
-        <param key="speaker_ringtone_ckv" value="true"/>
         <param key="speaker_voip_ckv" value="true"/>
         <param key="speaker_auto_calibration" value="true"/>
         <!-- YeWenliang@MULTIMEDIA.AUDIODRIVER, 2023/06/12, add for disable upd proximity -->
@@ -886,7 +885,7 @@
             </usecase>
             <usecase>
                 <name>PAL_STREAM_VOIP_RX</name>
-                <priority>2</priority>
+                <priority>3</priority>
                 <channels>2</channels>
                 <snd_device_name>speaker</snd_device_name>
             </usecase>
@@ -927,7 +926,7 @@
           </usecase>
           <usecase>
               <name>PAL_STREAM_VOIP_RX</name>
-              <priority>2</priority>
+              <priority>3</priority>
               <custom-config key="HAC">
                  <snd_device_name>handset</snd_device_name> <!-- override sound device name with HAC handset for voip -->
               </custom-config>
@@ -986,9 +985,7 @@
            </usecase>
            <usecase>
                <name>PAL_STREAM_VOIP_RX</name>
-               <priority>2</priority>
-               <samplerate>48000</samplerate>
-               <bit_width>16</bit_width>
+               <priority>3</priority>
            </usecase>
         </out-device>
         <out-device>
@@ -1027,9 +1024,7 @@
            </usecase>
            <usecase>
                <name>PAL_STREAM_VOIP_RX</name>
-               <priority>2</priority>
-               <samplerate>48000</samplerate>
-               <bit_width>16</bit_width>
+               <priority>3</priority>
            </usecase>
          </out-device>
         <out-device>
@@ -1115,6 +1110,10 @@
                 <name>PAL_STREAM_VOICE_CALL</name>
                 <priority>1</priority>
             </usecase>
+            <usecase>
+                <name>PAL_STREAM_VOIP_RX</name>
+                <priority>3</priority>
+            </usecase>
         </out-device>
         <out-device>
             <id>PAL_DEVICE_OUT_USB_HEADSET</id>
@@ -1126,6 +1125,10 @@
             <usecase>
                 <name>PAL_STREAM_VOICE_CALL</name>
                 <priority>1</priority>
+            </usecase>
+            <usecase>
+                <name>PAL_STREAM_VOIP_RX</name>
+                <priority>3</priority>
             </usecase>
         </out-device>
         <out-device>
@@ -1803,7 +1806,7 @@
                 <name>HOTWORD_VOICE_UI</name>
                 <param vendor_uuid="7038ddc8-30f2-11e6-b0ac-40a8f03d3f15" />
                 <param interface_plugin_lib="libhotword_intf.so" />
-                <param get_module_version="false" />
+                <param get_module_version="true" />
                 <param merge_first_stage_sound_models="false" />
                 <param capture_keyword="2000" />
                 <param client_capture_read_delay="2000" />

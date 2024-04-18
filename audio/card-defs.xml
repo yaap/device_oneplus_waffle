@@ -372,11 +372,24 @@
         </props>
     </pcm-device>
 
-    <!-- #ifdef OPLUS_FEATURE_OCAR_AUDIO -->
-    <!-- YeWenliang@MULTIMEDIA.AUDIODRIVER.HAL, 2022/09/06, add for support call record in ocar mode -->
     <pcm-device>
         <id>126</id>
         <name>PCM126</name>
+        <pcm_plugin>
+            <so-name>libagm_pcm_plugin.so</so-name>
+        </pcm_plugin>
+        <props>
+            <playback>1</playback>
+            <capture>0</capture>
+            <session_mode>0</session_mode>
+        </props>
+    </pcm-device>
+
+    <!-- #ifdef OPLUS_FEATURE_OCAR_AUDIO -->
+    <!-- YeWenliang@MULTIMEDIA.AUDIODRIVER.HAL, 2022/09/06, add for support call record in ocar mode -->
+    <pcm-device>
+        <id>127</id>
+        <name>PCM127</name>
         <pcm_plugin>
             <so-name>libagm_pcm_plugin.so</so-name>
         </pcm_plugin>
@@ -387,22 +400,6 @@
         </props>
     </pcm-device>
     <!-- #endif OPLUS_FEATURE_OCAR_AUDIO -->
-
-    <!-- #ifdef OPLUS_ARCH_EXTENDS -->
-    <!-- YeWenliang@MULTIMEDIA.AUDIODRIVER.HAL, 2022/09/06, add for playback pcm -->
-    <pcm-device>
-        <id>127</id>
-        <name>PCM127</name>
-        <pcm_plugin>
-            <so-name>libagm_pcm_plugin.so</so-name>
-        </pcm_plugin>
-        <props>
-            <playback>1</playback>
-            <capture>0</capture>
-            <session_mode>0</session_mode>
-        </props>
-    </pcm-device>
-    <!-- #endif OPLUS_ARCH_EXTENDS -->
 
     <mixer>
         <id>1</id>
