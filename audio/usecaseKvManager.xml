@@ -1,38 +1,37 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Copyright (c) 2021-2022 Qualcomm Innovation Center, Inc.All rights reserved -->
-<!--                                                                             -->
-<!--  Redistribution and use in source and binary forms, with or without         -->
-<!--  modification, are permitted provided that the following conditions are     -->
-<!--  met:                                                                       -->
-<!--      * Redistributions of source code must retain the above copyright       -->
-<!--        notice, this list of conditions and the following disclaimer.        -->
-<!--      * Redistributions in binary form must reproduce the above              -->
-<!--        copyright notice, this list of conditions and the following          -->
-<!--        disclaimer in the documentation and/or other materials provided      -->
-<!--        with the distribution.                                               -->
-<!--      * Neither the name of The Linux Foundation nor the names of its        -->
-<!--        contributors may be used to endorse or promote products derived      -->
-<!--        from this software without specific prior written permission.        -->
-<!--                                                                             -->
-<!--  NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY'S PATENT RIGHTS ARE GRANTED    -->
-<!--  BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND    -->
-<!--  CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING,     -->
-<!--  BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND          -->
-<!--  FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE     -->
-<!--  COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,       -->
-<!--  INCIDENTAL, SPECIAL, EXEMPLARY,OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT    -->
-<!--  NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF,      -->
-<!--  USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON     -->
-<!--  ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT    -->
-<!--  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE      -->
-<!--  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.ANY    -->
-<!--  DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL         -->
-<!--  DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS    -->
-<!--  OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)      -->
-<!--  HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,        -->
-<!--  STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING      -->
-<!--  IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISEDOF THE          -->
-<!--  POSSIBILITY OF SUCH DAMAGE.                                                -->
+<!-- Copyright (c) 2021, The Linux Foundation. All rights reserved.
+
+* Redistribution and use in source and binary forms, with or without
+* modification, are permitted provided that the following conditions are
+* met:
+*     * Redistributions of source code must retain the above copyright
+*       notice, this list of conditions and the following disclaimer.
+*     * Redistributions in binary form must reproduce the above
+*       copyright notice, this list of conditions and the following
+*       disclaimer in the documentation and/or other materials provided
+*       with the distribution.
+*     * Neither the name of The Linux Foundation nor the names of its
+*       contributors may be used to endorse or promote products derived
+*       from this software without specific prior written permission.
+
+* THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+* WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+* MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
+* ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+* BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+* CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+* SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+* BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+* WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+* OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+* IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+* Changes from Qualcomm Innovation Center are provided under the following license:
+* Copyright (c) 2022-2023 Qualcomm Innovation Center, Inc. All rights reserved.
+* SPDX-License-Identifier: BSD-3-Clause-Clear
+* -->
+
 <graph_key_value_pair_info>
     <streams>
         <!-- Low-latency stream -->
@@ -243,12 +242,20 @@
                 <graph_kv key="0xAB000000" value="0x1"/>
             </keys_and_values>
             <keys_and_values VUIModuleType="CUSTOM1" Instance="1">
-                <!-- STREAM_CONFIG - STREAM_CFG_VUI_AIS -->
-                <graph_kv key="0xBC000000" value="0xBC000010"/>
+                <!-- STREAM_CONFIG - STREAM_CFG_VUI_CUSTOM -->
+                <graph_kv key="0xBC000000" value="0xBC000004"/>
                 <!-- STREAMTX - VOICE_UI -->
                 <graph_kv key="0xB1000000" value="0xB1000003"/>
                 <!-- INSTANCE - INSTANCE_1 -->
                 <graph_kv key="0xAB000000" value="0x1"/>
+            </keys_and_values>
+            <keys_and_values VUIModuleType="CUSTOM1" Instance="2">
+                <!-- STREAM_CONFIG - STREAM_CFG_VUI_CUSTOM -->
+                <graph_kv key="0xBC000000" value="0xBC000004"/>
+                <!-- STREAMTX - VOICE_UI -->
+                <graph_kv key="0xB1000000" value="0xB1000003"/>
+                <!-- INSTANCE - INSTANCE_2 -->
+                <graph_kv key="0xAB000000" value="0x2"/>
             </keys_and_values>
         </stream>
         <!-- PCM-Offload stream -->
@@ -362,9 +369,17 @@
         </stream>
         <!-- Sensor PCM Data stream -->
         <stream type="PAL_STREAM_SENSOR_PCM_DATA">
-            <keys_and_values ACDModuleType="QC_SENSOR_PCM_DATA">
+            <keys_and_values ACDModuleType="QC_SENSOR_PCM_DATA" Instance="1">
                 <!-- STREAMTX - SENSOR_PCM_DATA -->
                 <graph_kv key="0xB1000000" value="0xB100000E"/>
+                <!-- INSTANCE - INSTANCE_1 -->
+                <graph_kv key="0xAB000000" value="0x1"/>
+            </keys_and_values>
+            <keys_and_values ACDModuleType="QC_SENSOR_PCM_DATA" Instance="2">
+                <!-- STREAMTX - SENSOR_PCM_DATA -->
+                <graph_kv key="0xB1000000" value="0xB100000E"/>
+                <!-- INSTANCE - INSTANCE_2 -->
+                <graph_kv key="0xAB000000" value="0x2"/>
             </keys_and_values>
         </stream>
     </streams>
@@ -520,6 +535,13 @@
             <keys_and_values>
                 <!-- DEVICETX - CPS_TX -->
                 <graph_kv key="0xA3000000" value="0xA300000E"/>
+            </keys_and_values>
+        </device>
+        <!-- In Haptics VI feedback Device -->
+        <device id="PAL_DEVICE_IN_HAPTICS_VI_FEEDBACK">
+            <keys_and_values>
+                <!-- DEVICETX - HAPTICS_VI_TX -->
+                <graph_kv key="0xA3000000" value="0xA300000C"/>
             </keys_and_values>
         </device>
         <!-- Out hearing AID Device -->
@@ -841,7 +863,7 @@
         </devicepp>
         <!-- OUT Handset DevicePPs -->
         <devicepp id="PAL_DEVICE_OUT_HANDSET">
-            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_PCM_OFFLOAD,PAL_STREAM_COMPRESSED,PAL_STREAM_LOW_LATENCY,PAL_STREAM_GENERIC">
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_PCM_OFFLOAD,PAL_STREAM_COMPRESSED,PAL_STREAM_LOW_LATENCY,PAL_STREAM_GENERIC,PAL_STREAM_SPATIAL_AUDIO">
                 <!-- DEVICERX - HANDSET -->
                 <graph_kv key="0xA2000000" value="0xA2000004"/>
                 <!-- DEVICEPP_RX - DEVICEPP_RX_AUDIO_MBDRC -->
@@ -1049,6 +1071,15 @@
                 <graph_kv key="0xAC000000" value="0xAC000005"/>
             </keys_and_values>
         </devicepp>
+        <!-- OUT Haptics device DevicePPs -->
+        <devicepp id="PAL_DEVICE_OUT_HAPTICS_DEVICE">
+            <keys_and_values CustomConfig="haptics-over-wsa">
+                <!-- DEVICERX - HAPTICS_DEVICE -->
+                <graph_kv key="0xA2000000" value="0xA2000009"/>
+                <!-- DEVICEPP_RX - DEVICEPP_RX_HAPTICS_GEN -->
+                <graph_kv key="0xAC000000" value="0xAC00000D"/>
+            </keys_and_values>
+        </devicepp>
         <!-- IN Handset MIC DevicePPs -->
         <devicepp id="PAL_DEVICE_IN_HANDSET_MIC">
             <keys_and_values StreamType="PAL_STREAM_VOICE_RECOGNITION">
@@ -1109,7 +1140,7 @@
                 <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_PRO -->
                 <graph_kv key="0xAD000000" value="0xAD00000A"/>
             </keys_and_values>
-            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL" CustomConfig="nn-sm">
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL" CustomConfig="nn-sm,dual-mic-nn-sm">
                 <!-- DEVICETX - HANDSETMIC -->
                 <graph_kv key="0xA3000000" value="0xA3000004"/>
                 <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_NN_SM -->
@@ -1162,16 +1193,6 @@
                 <graph_kv key="0xA3000000" value="0xA3000004"/>
                 <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_HAC -->
                 <graph_kv key="0xAD000000" value="0xAD000103"/>
-            </keys_and_values>
-            <keys_and_values StreamType="PAL_STREAM_RAW">
-                <!-- DEVICETX - HANDSETMIC -->
-                <graph_kv key="0xA3000000" value="0xA3000004"/>
-            </keys_and_values>
-            <keys_and_values StreamType="PAL_STREAM_RAW" CustomConfig="qva-record">
-                <!-- DEVICETX - HANDSETMIC -->
-                <graph_kv key="0xA3000000" value="0xA3000004"/>
-                <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_QVA -->
-                <graph_kv key="0xAD000000" value="0xAD000104"/>
             </keys_and_values>
         </devicepp>
         <!-- IN Speaker MIC DevicePPs -->
@@ -1234,7 +1255,7 @@
                 <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_PRO -->
                 <graph_kv key="0xAD000000" value="0xAD00000A"/>
             </keys_and_values>
-            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL" CustomConfig="nn-sm">
+            <keys_and_values StreamType="PAL_STREAM_VOICE_CALL" CustomConfig="nn-sm,dual-mic-nn-sm">
                 <!-- DEVICETX - SPEAKER_MIC -->
                 <graph_kv key="0xA3000000" value="0xA3000001"/>
                 <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_FLUENCE_NN_SM -->
@@ -1348,10 +1369,6 @@
                 <!-- DEVICEPP_TX - DEVICEPP_TX_KARAOKE -->
                 <graph_kv key="0xAD000000" value="0xAD000100"/>
             </keys_and_values>
-            <keys_and_values StreamType="PAL_STREAM_ULTRA_LOW_LATENCY" CustomConfig="ktv-mic">
-                <!-- DEVICETX - HEADPHONE_MIC -->
-                <graph_kv key="0xA3000000" value="0xA3000003"/>
-            </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_VOICE_CALL">
                 <!-- DEVICETX - HEADPHONE_MIC -->
                 <graph_kv key="0xA3000000" value="0xA3000003"/>
@@ -1439,10 +1456,6 @@
                 <!-- DEVICEPP_TX - DEVICEPP_TX_KARAOKE -->
                 <graph_kv key="0xAD000000" value="0xAD000100"/>
             </keys_and_values>
-            <keys_and_values StreamType="PAL_STREAM_ULTRA_LOW_LATENCY" CustomConfig="ktv-mic">
-                <!-- DEVICETX - USB_TX -->
-                <graph_kv key="0xA3000000" value="0xA3000005"/>
-            </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_VOICE_CALL">
                 <!-- DEVICETX - USB_TX -->
                 <graph_kv key="0xA3000000" value="0xA3000005"/>
@@ -1489,7 +1502,7 @@
         <!-- IN Handset_VA_MIC DevicePPs -->
         <devicepp id="PAL_DEVICE_IN_HANDSET_VA_MIC">
             <keys_and_values StreamType="PAL_STREAM_ACD,PAL_STREAM_VOICE_UI,PAL_STREAM_SENSOR_PCM_DATA"
-                DevicePPType="SINGLE_MIC_16KHZ_16BIT_FFECNS,DUAL_MIC_16KHZ_16BIT_FFECNS,TRI_MIC_16KHZ_16BIT_FFECNS,QUAD_MIC_16KHZ_16BIT_FFECNS">
+                DevicePPType="SINGLE_MIC_48KHZ_16BIT_FFECNS,DUAL_MIC_48KHZ_16BIT_FFECNS,TRI_MIC_48KHZ_16BIT_FFECNS,QUAD_MIC_48KHZ_16BIT_FFECNS">
                 <!-- DEVICETX - HANDSETMIC_VA -->
                 <graph_kv key="0xA3000000" value="0xA3000006"/>
                 <!-- DEVICEPP_TX - DEVICEPP_TX_FLUENCE_FFECNS -->
@@ -1524,18 +1537,11 @@
                 <graph_kv key="0xAD000000" value="0xAD00001B"/>
             </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_VOICE_UI"
-                DevicePPType="SINGLE_MIC_16KHZ_16BIT_RAW_NLPI,DUAL_MIC_16KHZ_16BIT_RAW_NLPI">
+                DevicePPType="SINGLE_MIC_48KHZ_16BIT_RAW_NLPI,DUAL_MIC_48KHZ_16BIT_RAW_NLPI">
                 <!-- DEVICETX - HANDSETMIC_VA -->
                 <graph_kv key="0xA3000000" value="0xA3000006"/>
                 <!-- DEVICEPP_TX - DEVICEPP_TX_RAW_NLPI -->
                 <graph_kv key="0xAD000000" value="0xAD00000E"/>
-            </keys_and_values>
-            <keys_and_values StreamType="PAL_STREAM_VOICE_UI"
-                DevicePPType="DUAL_MIC_16KHZ_16BIT_AIS_ECNS">
-                <!-- DEVICETX - HANDSETMIC_VA -->
-                <graph_kv key="0xA3000000" value="0xA3000006"/>
-                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICEUI_AIS_ECNS -->
-                <graph_kv key="0xAD000000" value="0xAD000101"/>
             </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_ACD"
                 DevicePPType="SINGLE_MIC_16KHZ_16BIT_LPI">
@@ -1544,11 +1550,25 @@
                 <!-- DEVICEPP_TX - DEVICEPP_TX_AAD -->
                 <graph_kv key="0xAD000000" value="0xAD000019"/>
             </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_UI"
+                DevicePPType="SINGLE_MIC_16KHZ_16BIT_CUSTOM_NS,DUAL_MIC_16KHZ_16BIT_CUSTOM_NS,TRI_MIC_16KHZ_16BIT_CUSTOM_NS,QUAD_MIC_16KHZ_16BIT_CUSTOM_NS">
+                <!-- DEVICETX - HANDSETMIC_VA -->
+                <graph_kv key="0xA3000000" value="0xA3000006"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_CUSTOM_NS -->
+                <graph_kv key="0xAD000000" value="0xAD000026"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_UI"
+                DevicePPType="SINGLE_MIC_48KHZ_16BIT_CUSTOM_ECNS,DUAL_MIC_48KHZ_16BIT_CUSTOM_ECNS,TRI_MIC_48KHZ_16BIT_CUSTOM_ECNS,QUAD_MIC_48KHZ_16BIT_CUSTOM_ECNS">
+                <!-- DEVICETX - HANDSETMIC_VA -->
+                <graph_kv key="0xA3000000" value="0xA3000006"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_CUSTOM_ECNS -->
+                <graph_kv key="0xAD000000" value="0xAD000025"/>
+            </keys_and_values>
         </devicepp>
         <!-- IN Headset VA MIC  DevicePPs -->
         <devicepp id="PAL_DEVICE_IN_HEADSET_VA_MIC">
             <keys_and_values StreamType="PAL_STREAM_ACD,PAL_STREAM_VOICE_UI,PAL_STREAM_SENSOR_PCM_DATA"
-                DevicePPType="SINGLE_MIC_16KHZ_16BIT_HEADSET_FFECNS">
+                DevicePPType="SINGLE_MIC_48KHZ_16BIT_HEADSET_FFECNS">
                 <!-- DEVICETX - HEADSETMIC_VA -->
                 <graph_kv key="0xA3000000" value="0xA3000007"/>
                 <!-- DEVICEPP_TX - DEVICEPP_TX_FLUENCE_FFECNS -->
@@ -1583,7 +1603,7 @@
                 <graph_kv key="0xAD000000" value="0xAD00001B"/>
             </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_VOICE_UI"
-                DevicePPType="SINGLE_MIC_16KHZ_16BIT_HEADSET_RAW_NLPI">
+                DevicePPType="SINGLE_MIC_48KHZ_16BIT_HEADSET_RAW_NLPI">
                 <!-- DEVICETX - HEADSETMIC_VA -->
                 <graph_kv key="0xA3000000" value="0xA3000007"/>
                 <!-- DEVICEPP_TX - DEVICEPP_TX_RAW_NLPI -->
@@ -1595,6 +1615,20 @@
                 <graph_kv key="0xA3000000" value="0xA3000007"/>
                 <!-- DEVICEPP_TX - DEVICEPP_TX_AAD -->
                 <graph_kv key="0xAD000000" value="0xAD000019"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_UI"
+                DevicePPType="SINGLE_MIC_48KHZ_16BIT_HEADSET_CUSTOM_ECNS">
+                <!-- DEVICETX - HEADSETMIC_VA -->
+                <graph_kv key="0xA3000000" value="0xA3000007"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_CUSTOM_ECNS -->
+                <graph_kv key="0xAD000000" value="0xAD000025"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOICE_UI"
+                DevicePPType="SINGLE_MIC_16KHZ_16BIT_HEADSET_CUSTOM_NS">
+                <!-- DEVICETX - HEADSETMIC_VA -->
+                <graph_kv key="0xA3000000" value="0xA3000007"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_CUSTOM_NS -->
+                <graph_kv key="0xAD000000" value="0xAD000026"/>
             </keys_and_values>
         </devicepp>
        <!-- IN BT A2DP DevicePPs -->
