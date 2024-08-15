@@ -1,0 +1,10 @@
+[
+  {
+    "repository": "device_oneplus_sm8650-common",
+    "target_path": "device/oneplus/sm8650-common"
+  }
+  {
+    "repository": "device_oneplus_waffle-kernel",
+    "target_path": "device/oneplus_waffle-kernel"
+  }
+]
