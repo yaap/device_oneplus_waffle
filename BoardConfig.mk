@@ -17,6 +17,13 @@ TARGET_SCREEN_DENSITY := 640
 
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/oplus/waffle.config
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)-kernel/dtbo.img
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)-kernel/dtb.img
+#BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
+#BOARD_MKBOOTIMG_INIT_ARGS += --dtb $(TARGET_PREBUILT_DTB)
+
+PRODUCT_COPY_FILES += \
+          $(DEVICE_PATH)-kernel/dtb.img:$(TARGET_COPY_OUT)/dtb.img
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
