@@ -10,7 +10,7 @@ include device/oneplus/sm8650-common/BoardConfigCommon.mk
 DEVICE_PATH := device/oneplus/waffle
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := OP5929L1,OP595DL1
+TARGET_OTA_ASSERT_DEVICE := OP5929L1|OP595DL1
 
 # Display
 TARGET_SCREEN_DENSITY := 640
