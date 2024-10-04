@@ -4,6 +4,10 @@ vendor.sensors.als_correction.grabrect=968 0 1072 104
 # Bluetooth
 bluetooth.device.default_name=OnePlus 12
 
+# Fingerprint
+ro.vendor.fingerprint.type=udfps_optical
+ro.vendor.fingerprint.sensor_location=720|2353|110
+
 # Graphics
 ro.surface_flinger.set_idle_timer_ms=60
 ro.surface_flinger.set_touch_timer_ms=120
