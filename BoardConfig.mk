@@ -26,10 +26,10 @@ PRODUCT_COPY_FILES += \
 # Kernel modules
 DLKM_MODULES_PATH := $(PREBUILT_PATH)/vendor_dlkm
 RAMDISK_MODULES_PATH := $(PREBUILT_PATH)/vendor_ramdisk
-SYSTEM_DLKM_MODULES_PATH := $(PREBUILT_PATH)/system_dlkm/6.1.57-android14-11-o-g26041213ac6c
+SYSTEM_DLKM_MODULES_PATH := $(PREBUILT_PATH)/system_dlkm/6.1.93-android14-11-gae1f1b59ed43-ab12443010
 
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(SYSTEM_DLKM_MODULES_PATH)/,$(TARGET_COPY_OUT_SYSTEM_DLKM)/lib/modules/6.1.93-android14-11-gf2eef5d0c518-ab12425849/)
+    $(call find-copy-subdir-files,*,$(SYSTEM_DLKM_MODULES_PATH)/,$(TARGET_COPY_OUT_SYSTEM_DLKM)/lib/modules/6.1.93-android14-11-gae1f1b59ed43-ab12443010/)
 BOARD_SYSTEM_KERNEL_MODULES_LOAD := $(patsubst %,$(SYSTEM_DLKM_MODULES_PATH)/%,$(shell cat $(SYSTEM_DLKM_MODULES_PATH)/modules.load))
 BOARD_SYSTEM_KERNEL_MODULES_BLOCKLIST_FILE := $(DLKM_MODULES_PATH)/system_dlkm.modules.blocklist
 
