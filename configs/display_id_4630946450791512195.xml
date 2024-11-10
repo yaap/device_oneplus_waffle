@@ -37,18 +37,14 @@ SPDX-License-Identifier: BSD-3-Clause-Clear
 
 <displayConfiguration>
     <!-- Global Brightness-Nit mapping -->
-    <screenBrightnessMap>
+    <screenBrightnessMap interpolation="linear">
         <point>
-            <value>0.0</value>
-            <nits>2.0</nits>
-        </point>
-        <point>
-            <value>0.85</value>
-            <nits>1360.0</nits>
+            <value>0.00058599472</value>
+            <nits>6.0</nits>
         </point>
         <point>
             <value>1.0</value>
-            <nits>1600.0</nits>
+            <nits>800.0</nits>
         </point>
     </screenBrightnessMap>
 
