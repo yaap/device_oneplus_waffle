@@ -147,7 +147,9 @@ odm/etc/inparm/irissoft_AA545_P_3_A0005_dsc_cmd_mode_panel/inParm8.txt
 odm/etc/inparm/irissoft_AA545_P_3_A0005_dsc_cmd_mode_panel/mcfCheck.txt
 odm/etc/inparm/irissoft_AA545_P_3_A0005_dsc_cmd_mode_panel/mcfCheck_2nit.txt
 odm/etc/inparm/irissoft_AA545_P_3_A0005_dsc_cmd_mode_panel/mcfCheck_low.txt
+odm/etc/displaycolorfeaturecfg.xml
 odm/etc/iris_configs.xml
+odm/etc/plugin_config.xml
 odm/etc/irissoft_AA545_P_1_A0006_dsc_cmd_mode_panel.fw
 odm/etc/irissoft_AA545_P_1_A0006_dsc_cmd_mode_panel.xml
 odm/etc/irissoft_AA545_P_3_A0005_dsc_cmd_mode_panel.dat
