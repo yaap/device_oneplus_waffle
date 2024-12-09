@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 12 (CPH2581_14.0.0.830(EX01)).
+## are from OnePlus 12 (CPH2581_15.0.0.305(EX01)).
 
 # ACDB
 odm/etc/acdbdata/Audio_Parameter_Version.txt
@@ -87,6 +87,9 @@ odm/etc/camera/config/video_beauty_default_config
 odm/etc/camera/settings_fdc.txt
 odm/etc/camera/settings_fdc_lite.txt
 
+# Display calibration data
+odm/etc/display/qdcm_calib_data_AA545_P_3_A0005_dsc_cmd_mode_panel.json
+
 # Display (Pixelworks)
 odm/etc/inparm/iris7_AA545_P_1_A0006_dsc_cmd_mode_panel/inParm14.txt
 odm/etc/inparm/iris7_AA545_P_1_A0006_dsc_cmd_mode_panel/inParm14_low.txt
@@ -147,9 +150,8 @@ odm/etc/inparm/irissoft_AA545_P_3_A0005_dsc_cmd_mode_panel/inParm8.txt
 odm/etc/inparm/irissoft_AA545_P_3_A0005_dsc_cmd_mode_panel/mcfCheck.txt
 odm/etc/inparm/irissoft_AA545_P_3_A0005_dsc_cmd_mode_panel/mcfCheck_2nit.txt
 odm/etc/inparm/irissoft_AA545_P_3_A0005_dsc_cmd_mode_panel/mcfCheck_low.txt
-odm/etc/displaycolorfeaturecfg.xml
 odm/etc/iris_configs.xml
-odm/etc/plugin_config.xml
+odm/etc/iris_page_i7.json
 odm/etc/irissoft_AA545_P_1_A0006_dsc_cmd_mode_panel.fw
 odm/etc/irissoft_AA545_P_1_A0006_dsc_cmd_mode_panel.xml
 odm/etc/irissoft_AA545_P_3_A0005_dsc_cmd_mode_panel.dat
@@ -176,9 +178,11 @@ odm/etc/sensor/config/lanai_mtp_bmp5_0.json
 odm/etc/sensor/config/lanai_mtp_cct_rear.json
 odm/etc/sensor/config/lanai_mtp_freefall.json
 odm/etc/sensor/config/lanai_mtp_icm4x6xx.json
+odm/etc/sensor/config/lanai_mtp_oplus_chop.json
 odm/etc/sensor/config/lanai_mtp_oplus_lay.json
 odm/etc/sensor/config/lanai_mtp_oplus_shaking.json
 odm/etc/sensor/config/lanai_mtp_oplus_smart_prox.json
+odm/etc/sensor/config/lanai_mtp_pocket.json
 odm/etc/sensor/config/lanai_mtp_sx933x_0.json
 odm/etc/sensor/config/lanai_mtp_sx937x_0.json
 odm/etc/sensor/config/lux_aod.json
@@ -186,28 +190,6 @@ odm/etc/sensor/config/waffle_qrd_ois_system.json
 odm/etc/sensor/sensor_config.json
 
 # Touchscreen firmware
-odm/firmware/tp/22111/FW_S3910_BOE.img
-odm/firmware/tp/22111/FW_S3910_BOE_FAE.img
-odm/firmware/tp/22111/FW_S3910_BOE_HBP.img
-odm/firmware/tp/22111/FW_S3910_BOE_HBP_FAE.img
-odm/firmware/tp/22111/FW_S3910_SAMSUNG.img
-odm/firmware/tp/22111/FW_S3910_SAMSUNG_FAE.img
-odm/firmware/tp/22111/FW_S3910_TIANMA.img
-odm/firmware/tp/22111/FW_S3910_TIANMA_FAE.img
-odm/firmware/tp/22111/FW_S3910_TIANMA_HBP.img
-odm/firmware/tp/22111/FW_S3910_TIANMA_HBP_FAE.img
-odm/firmware/tp/22111/LIB_S3910_BOE_HBP_TS_ALGO.so
-odm/firmware/tp/22111/LIB_S3910_BOE_HBP_TS_HAL.so
-odm/firmware/tp/22111/LIB_S3910_TIANMA_HBP_TS_ALGO.so
-odm/firmware/tp/22111/LIB_S3910_TIANMA_HBP_TS_HAL.so
-odm/firmware/tp/22111/LIMIT_S3910_BOE.img
-odm/firmware/tp/22111/LIMIT_S3910_BOE_HBP.img
-odm/firmware/tp/22111/LIMIT_S3910_SAMSUNG.img
-odm/firmware/tp/22111/LIMIT_S3910_TIANMA.img
-odm/firmware/tp/22111/LIMIT_S3910_TIANMA_HBP.img
-odm/firmware/tp/22111/libIfp.so
-odm/firmware/tp/22111/sys_touch_algo_feature_config.xml
-odm/firmware/tp/22111/sys_touch_function_feature_config.xml
 odm/firmware/tp/22825/FW_S3910_BOE.img
 odm/firmware/tp/22825/FW_S3910_BOE_FAE.img
 odm/firmware/tp/22825/FW_S3910_BOE_HBP.img
@@ -233,14 +215,6 @@ odm/firmware/tp/22825/libIfp.so
 odm/firmware/tp/22825/sys_edge_touch_config.xml
 odm/firmware/tp/22825/sys_touch_algo_feature_config.xml
 odm/firmware/tp/22825/sys_touch_function_feature_config.xml
-odm/firmware/tp/23607/FW_S3910_BOE.img
-odm/firmware/tp/23607/FW_S3910_BOE_FAE.img
-odm/firmware/tp/23607/FW_S3910_TIANMA.img
-odm/firmware/tp/23607/FW_S3910_TIANMA_FAE.img
-odm/firmware/tp/23607/LIMIT_S3910_BOE.img
-odm/firmware/tp/23607/LIMIT_S3910_BOE_AGING.img
-odm/firmware/tp/23607/LIMIT_S3910_TIANMA.img
-odm/firmware/tp/23607/sys_edge_touch_config.xml
 
 # WiFi
 odm/etc/wifi/kiwi/bdwlan.b0a
