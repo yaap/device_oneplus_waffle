@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 12 (CPH2581_15.0.0.305(EX01)).
+## are from OnePlus 12 (CPH2581_15.0.0.503(EX01)).
 
 # ACDB
 odm/etc/acdbdata/Audio_Parameter_Version.txt
@@ -83,6 +83,7 @@ odm/etc/camera/config/oplus_camera_config
 odm/etc/camera/config/oplus_camera_preview_decision_config.json
 odm/etc/camera/config/oplus_preview_decision_params.json
 odm/etc/camera/config/ov64b40_tele
+odm/etc/camera/config/quick_visibility_white_list
 odm/etc/camera/config/video_beauty_default_config
 odm/etc/camera/settings_fdc.txt
 odm/etc/camera/settings_fdc_lite.txt
