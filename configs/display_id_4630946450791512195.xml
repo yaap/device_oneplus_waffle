@@ -36,6 +36,18 @@ SPDX-License-Identifier: BSD-3-Clause-Clear
 -->
 
 <displayConfiguration>
+    <densityMapping>
+        <density>
+            <height>1080</height>
+            <width>2376</width>
+            <density>450</density>
+        </density>
+        <density>
+            <height>1440</height>
+            <width>3168</width>
+            <density>560</density>
+        </density>
+    </densityMapping>
     <!-- Global Brightness-Nit mapping -->
     <screenBrightnessMap interpolation="linear">
         <point>
