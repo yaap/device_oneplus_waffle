@@ -5,7 +5,7 @@
 odm/etc/acdbdata/Audio_Parameter_Version.txt
 odm/etc/acdbdata/FTM/acdb_cal.acdb
 odm/etc/acdbdata/FTM/workspaceFileXml.qwsp
-odm/etc/acdbdata/acdb_cal.acdb
+odm/etc/acdbdata/acdb_cal.acdb;SYMLINK=vendor/etc/acdbdata/pineapple_mtp/acdb_cal.acdb
 
 # Audio firmware
 odm/firmware/tfa98xx.cnt
