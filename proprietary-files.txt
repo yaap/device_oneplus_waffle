@@ -216,6 +216,9 @@ odm/firmware/tp/22825/sys_edge_touch_config.xml
 odm/firmware/tp/22825/sys_touch_algo_feature_config.xml
 odm/firmware/tp/22825/sys_touch_function_feature_config.xml
 
+# Vibrator
+odm/etc/aac_richtap.config
+
 # WiFi
 odm/etc/wifi/kiwi/bdwlan.b0a
 odm/etc/wifi/kiwi/bdwlan.b0c
