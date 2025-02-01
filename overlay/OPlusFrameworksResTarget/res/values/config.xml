@@ -450,4 +450,9 @@
         <item>110</item>  <!-- <item>sensorRadius</item> -->
     </integer-array>
 
+    <!-- Disable stock components if installed -->
+    <string-array name="config_globallyDisabledComponents" translatable="false" >
+        <item>com.google.android.gms/com.google.android.gms.mdm.receivers.MdmDeviceAdminReceiver</item>
+    </string-array>
+
 </resources>
