@@ -219,6 +219,8 @@ odm/firmware/tp/22825/sys_touch_function_feature_config.xml
 
 # Vibrator
 odm/etc/vibrator/vibrator_effect.json
+odm/etc/vibrator/9999/def/effect_0.bin
+odm/etc/vibrator/9999/def/effect_1.bin
 odm/etc/vibrator/9999/def/effect_2.bin
 odm/etc/vibrator/9999/def/effect_3.bin
 odm/etc/vibrator/9999/def/effect_4.bin
