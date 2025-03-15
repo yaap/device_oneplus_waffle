@@ -6,9 +6,5 @@
   {
     "repository": "proprietary_vendor_oneplus_waffle",
     "target_path": "vendor/oneplus/waffle"
-  },
-  {
-    "repository": "device_oneplus_waffle-kernel",
-    "target_path": "device/oneplus/waffle-kernel"
   }
 ]
