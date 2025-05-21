@@ -48,6 +48,10 @@ SPDX-License-Identifier: BSD-3-Clause-Clear
             <density>560</density>
         </density>
     </densityMapping>
+
+    <!-- This panel supports Vrr -->
+    <supportsVrr>true</supportsVrr>
+
     <!-- Global Brightness-Nit mapping -->
     <screenBrightnessMap interpolation="linear">
         <point>
