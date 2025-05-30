@@ -236,17 +236,17 @@
          1) Contain at least two entries
          2) Be the same length as config_displayWhiteBalanceDisplayColorTemperatures. -->
     <array name="config_displayWhiteBalanceAmbientColorTemperatures">
-        <item>2500</item>
-        <item>3100</item>
-        <item>3700</item>
-        <item>4200</item>
-        <item>4800</item>
-        <item>5300</item>
-        <item>6000</item>
-        <item>6500</item>
-        <item>7000</item>
-        <item>7500</item>
-        <item>8000</item>
+        <item>2400</item>
+        <item>3000</item>
+        <item>3600</item>
+        <item>4100</item>
+        <item>4700</item>
+        <item>5200</item>
+        <item>5800</item>
+        <item>6300</item>
+        <item>6800</item>
+        <item>7300</item>
+        <item>7800</item>
     </array>
 
     <!-- See DisplayWhiteBalanceController.
@@ -349,10 +349,10 @@
          - If 100 <= Y < 1000, we require Y < (1 - 0.05) * X = 0.95X;
          - If 1000 <= Y, we require Y < (1 - 0) * X = X. -->
     <array name="config_displayWhiteBalanceBaseThresholds">
+        <item>6200</item>
         <item>6300</item>
-        <item>6400</item>
-        <item>6850</item>
-        <item>7450</item>
+        <item>6750</item>
+        <item>7350</item>
     </array>
 
     <!-- See DisplayWhiteBalanceThrottler.
