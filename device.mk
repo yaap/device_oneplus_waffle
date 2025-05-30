@@ -35,6 +35,10 @@ PRODUCT_PACKAGES += \
     OPlusSystemUIResTarget \
     OPlusWifiResTarget
 
+# QDCM
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/qdcm_calib_data_AA545_P_3_A0005_dsc_cmd_mode_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_AA545_P_3_A0005_dsc_cmd_mode_panel.json
+
 # Sensors
 PRODUCT_PACKAGES += \
     vendor.lineage.oplus_als.service

@@ -88,9 +88,6 @@ odm/etc/camera/config/video_beauty_default_config
 odm/etc/camera/settings_fdc.txt
 odm/etc/camera/settings_fdc_lite.txt
 
-# Display calibration data
-odm/etc/display/qdcm_calib_data_AA545_P_3_A0005_dsc_cmd_mode_panel.json
-
 # Display (Pixelworks)
 odm/etc/inparm/iris7_AA545_P_1_A0006_dsc_cmd_mode_panel/inParm14.txt
 odm/etc/inparm/iris7_AA545_P_1_A0006_dsc_cmd_mode_panel/inParm14_low.txt
