@@ -90,6 +90,7 @@ odm/etc/camera/settings_fdc_lite.txt
 
 # Display calibration data
 odm/etc/display/qdcm_calib_data_AA545_P_3_A0005_dsc_cmd_mode_panel.json;SYMLINK=vendor/etc/display/qdcm_calib_data_AA545_P_3_A0005_dsc_cmd_mode_panel.json
+my_product/vendor/etc/display_apollo_list_AA545_P_3_A0005_dsc_cmd_mode_panel.xml:vendor/etc/display_apollo_list_AA545_P_3_A0005_dsc_cmd_mode_panel.xml
 
 # Display (Pixelworks)
 odm/etc/inparm/iris7_AA545_P_1_A0006_dsc_cmd_mode_panel/inParm14.txt
