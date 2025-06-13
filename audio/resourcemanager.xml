@@ -284,19 +284,11 @@
                 <sidetone_mode>OFF</sidetone_mode>
                 <bit_width>16</bit_width>
                 <ec_enable>1</ec_enable>
-                <custom-config key="nn-sm">
-                    <channels>1</channels>
-                    <snd_device_name>handset-mic</snd_device_name>
-                </custom-config>
                 <custom-config key="dual-mic">
                     <channels>2</channels>
                     <snd_device_name>handset-dmic-endfire</snd_device_name>
                 </custom-config>
-                    <custom-config key="dual-mic-nn-sm">
-                    <channels>2</channels>
-                    <snd_device_name>handset-dmic-endfire</snd_device_name>
-                </custom-config>
-                    <custom-config key="dual-mic-cascade">
+                <custom-config key="dual-mic-cascade">
                     <channels>2</channels>
                     <snd_device_name>handset-dmic-endfire</snd_device_name>
                 </custom-config>
@@ -436,15 +428,7 @@
                 <sidetone_mode>OFF</sidetone_mode>
                 <bit_width>16</bit_width>
                 <ec_enable>1</ec_enable>
-                <custom-config key="nn-sm">
-                    <channels>1</channels>
-                    <snd_device_name>speaker-mic</snd_device_name>
-                </custom-config>
                 <custom-config key="dual-mic">
-                    <channels>2</channels>
-                    <snd_device_name>speaker-dmic-endfire</snd_device_name>
-                </custom-config>
-                <custom-config key="dual-mic-nn-sm">
                     <channels>2</channels>
                     <snd_device_name>speaker-dmic-endfire</snd_device_name>
                 </custom-config>
@@ -531,10 +515,6 @@
                 <bit_width>16</bit_width>
                 <priority>1</priority>
                 <ec_enable>1</ec_enable>
-                <custom-config key="nn-sm">
-                    <channels>1</channels>
-                    <snd_device_name>headset-mic</snd_device_name>
-                </custom-config>
             </usecase>
             <usecase>
                 <name>PAL_STREAM_ULTRA_LOW_LATENCY</name>
