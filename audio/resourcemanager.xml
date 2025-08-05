@@ -1266,11 +1266,11 @@
             <!-- Sound trigger streams common params -->
             <param lpi_enable="true" />
             <param support_nlpi_switch="true" />
-            <param support_device_switch="false" />
+            <param support_device_switch="true" />
             <param enable_debug_dumps="false" />
-            <param concurrent_capture="false" />
-            <param concurrent_voice_call="false" />
-            <param concurrent_voip_call="false" />
+            <param concurrent_capture="true" />
+            <param concurrent_voice_call="true" />
+            <param concurrent_voip_call="true" />
             <param low_latency_bargein_enable="false" />
         </common_config>
         <capture_profile_list>
