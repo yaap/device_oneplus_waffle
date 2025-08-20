@@ -284,11 +284,19 @@
                 <sidetone_mode>OFF</sidetone_mode>
                 <bit_width>16</bit_width>
                 <ec_enable>1</ec_enable>
+                <custom-config key="nn-sm">
+                    <channels>1</channels>
+                    <snd_device_name>handset-mic</snd_device_name>
+                </custom-config>
                 <custom-config key="dual-mic">
                     <channels>2</channels>
                     <snd_device_name>handset-dmic-endfire</snd_device_name>
                 </custom-config>
-                <custom-config key="dual-mic-cascade">
+                    <custom-config key="dual-mic-nn-sm">
+                    <channels>2</channels>
+                    <snd_device_name>handset-dmic-endfire</snd_device_name>
+                </custom-config>
+                    <custom-config key="dual-mic-cascade">
                     <channels>2</channels>
                     <snd_device_name>handset-dmic-endfire</snd_device_name>
                 </custom-config>
@@ -428,7 +436,15 @@
                 <sidetone_mode>OFF</sidetone_mode>
                 <bit_width>16</bit_width>
                 <ec_enable>1</ec_enable>
+                <custom-config key="nn-sm">
+                    <channels>1</channels>
+                    <snd_device_name>speaker-mic</snd_device_name>
+                </custom-config>
                 <custom-config key="dual-mic">
+                    <channels>2</channels>
+                    <snd_device_name>speaker-dmic-endfire</snd_device_name>
+                </custom-config>
+                <custom-config key="dual-mic-nn-sm">
                     <channels>2</channels>
                     <snd_device_name>speaker-dmic-endfire</snd_device_name>
                 </custom-config>
@@ -515,6 +531,10 @@
                 <bit_width>16</bit_width>
                 <priority>1</priority>
                 <ec_enable>1</ec_enable>
+                <custom-config key="nn-sm">
+                    <channels>1</channels>
+                    <snd_device_name>headset-mic</snd_device_name>
+                </custom-config>
             </usecase>
             <usecase>
                 <name>PAL_STREAM_ULTRA_LOW_LATENCY</name>
@@ -829,7 +849,7 @@
             <samplerate>48000</samplerate>
             <bit_width>24</bit_width>
             <snd_device_name>speaker</snd_device_name>
-            <speaker_protection_enabled>0</speaker_protection_enabled>
+            <speaker_protection_enabled>1</speaker_protection_enabled>
             <fractional_sr>0</fractional_sr>
             <!-- To enable external EC reference the flag extec_ref_enabled must be added as 1 -->
             <ext_ec_ref_enabled>0</ext_ec_ref_enabled>
@@ -1266,11 +1286,11 @@
             <!-- Sound trigger streams common params -->
             <param lpi_enable="true" />
             <param support_nlpi_switch="true" />
-            <param support_device_switch="true" />
+            <param support_device_switch="false" />
             <param enable_debug_dumps="false" />
-            <param concurrent_capture="true" />
-            <param concurrent_voice_call="true" />
-            <param concurrent_voip_call="true" />
+            <param concurrent_capture="false" />
+            <param concurrent_voice_call="false" />
+            <param concurrent_voip_call="false" />
             <param low_latency_bargein_enable="false" />
         </common_config>
         <capture_profile_list>
@@ -1786,7 +1806,7 @@
                 <name>HOTWORD_VOICE_UI</name>
                 <param vendor_uuid="7038ddc8-30f2-11e6-b0ac-40a8f03d3f15" />
                 <param interface_plugin_lib="libhotword_intf.so" />
-                <param get_module_version="false" />
+                <param get_module_version="true" />
                 <param merge_first_stage_sound_models="false" />
                 <param capture_keyword="2000" />
                 <param client_capture_read_delay="2000" />
