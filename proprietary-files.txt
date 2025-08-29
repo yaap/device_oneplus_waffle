@@ -64,6 +64,9 @@ odm/etc/lvacfs_params/2mic/audiozoom_7.txt
 odm/etc/lvacfs_params/2mic/audiozoom_8.txt
 odm/etc/lvacfs_params/2mic/audiozoom_9.txt
 
+# Audio (Dolby)
+odm/etc/dolby/multimedia_dolby_dax_default.xml
+
 # Camera
 odm/etc/camera/CameraHWConfiguration.config
 odm/etc/camera/camera_engmode.xml
