@@ -9,63 +9,6 @@
          Software implementation will be used if config_hardware_auto_brightness_available is not set -->
     <bool name="config_automatic_brightness_available">true</bool>
 
-    <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
-         percent. The length of this array is assumed to be one greater than
-         config_ambientThresholdLevels. The brightening threshold is calculated as
-         lux * (1.0f + CONSTRAINT_VALUE). When the current lux is higher than this threshold,
-         the screen brightness is recalculated. See the config_ambientThresholdLevels
-         description for how the constraint value is chosen. -->
-    <integer-array name="config_ambientBrighteningThresholds">
-        <item>600</item>
-        <item>300</item>
-    </integer-array>
-
-    <!-- Array of hysteresis constraint values for darkening, represented as tenths of a
-         percent. The length of this array is assumed to be one greater than
-         config_ambientThresholdLevels. The darkening threshold is calculated as
-         lux * (1.0f - CONSTRAINT_VALUE). When the current lux is lower than this threshold,
-         the screen brightness is recalculated. See the config_ambientThresholdLevels
-         description for how the constraint value is chosen. -->
-    <integer-array name="config_ambientDarkeningThresholds">
-        <item>600</item>
-        <item>300</item>
-    </integer-array>
-
-    <!-- Array of screen brightness threshold values. This is used for determining hysteresis
-         constraint values by calculating the index to use for lookup and then setting the
-         constraint value to the corresponding value of the array. The new brightening hysteresis
-         constraint value is the n-th element of config_screenBrighteningThresholds, and the new
-         darkening hysteresis constraint value is the n-th element of
-         config_screenDarkeningThresholds.
-         The (zero-based) index is calculated as follows: (MAX is the largest index of the array)
-         condition                       calculated index
-         value < level[0]                0
-         level[n] <= value < level[n+1]  n+1
-         level[MAX] <= value             MAX+1 -->
-    <integer-array name="config_ambientThresholdLevels">
-        <item>10</item>
-    </integer-array>
-
-    <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
-         percent. The length of this array is assumed to be one greater than
-         config_screenThresholdLevels. The brightening threshold is calculated as
-         screenBrightness * (1.0f + CONSTRAINT_VALUE). When the new screen brightness is higher
-         than this threshold, it is applied. See the config_screenThresholdLevels description for
-         how the constraint value is chosen. -->
-    <integer-array name="config_screenBrighteningThresholds">
-        <item>0</item>
-    </integer-array>
-
-    <!-- Array of hysteresis constraint values for darkening, represented as tenths of a
-         percent. The length of this array is assumed to be one greater than
-         config_screenThresholdLevels. The darkening threshold is calculated as
-         screenBrightness * (1.0f - CONSTRAINT_VALUE). When the new screen brightness is lower than
-         this threshold, it is applied. See the config_screenThresholdLevels description for how
-         the constraint value is chosen. -->
-    <array name="config_screenDarkeningThresholds">
-        <item>0</item>
-    </array>
-
     <!-- Array of light sensor lux values to define our levels for auto backlight brightness support.
          The N entries of this array define N + 1 control points as follows:
          (1-based arrays)
@@ -87,6 +30,8 @@
 
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
+        <item>1</item>
+        <item>2</item>
         <item>4</item>
         <item>6</item>
         <item>8</item>
@@ -136,6 +81,8 @@
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
+        <item>2.5</item>
+        <item>7.5</item>
         <item>13.0</item>
         <item>18.0</item>
         <item>25.0</item>
@@ -185,7 +132,7 @@
     <!-- Default screen brightness setting set.
          -2 is invalid so setting will resort to int value specified above.
          Must be in the range specified by minimum and maximum. -->
-    <item type="dimen" name="config_screenBrightnessSettingDefaultFloat">0.43002246313</item>
+    <item type="dimen" name="config_screenBrightnessSettingDefaultFloat">0.75</item>
 
     <!-- Maximum screen brightness allowed by the power manager.
          -2 is invalid so setting will resort to int value specified above.
@@ -202,14 +149,6 @@
     <!-- The maximum range of gamma adjustment possible using the screen
          auto-brightness adjustment setting. -->
     <fraction name="config_autoBrightnessAdjustmentMaxGamma">100%</fraction>
-
-    <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
-         for debouncing the light sensor.  Different constants are used to debounce the light sensor
-         when adapting to brighter or darker environments.  This parameter controls how quickly
-         brightness changes occur in response to an observed change in light level that exceeds the
-         hysteresis threshold. -->
-    <integer name="config_autoBrightnessBrighteningLightDebounce">1500</integer>
-    <integer name="config_autoBrightnessDarkeningLightDebounce">1500</integer>
 
     <!-- Boolean indicating whether display white balance is supported. -->
     <bool name="config_displayWhiteBalanceAvailable">true</bool>

@@ -58,8 +58,8 @@ SPDX-License-Identifier: BSD-3-Clause-Clear
       <nits>4.4509</nits>
     </point>
     <point>
-       <value>0.0392</value>
-       <nits>6.8769</nits>
+      <value>0.0392</value>
+      <nits>6.8769</nits>
     </point>
     <point>
       <value>0.0587</value>
@@ -82,7 +82,7 @@ SPDX-License-Identifier: BSD-3-Clause-Clear
       <nits>49.5442</nits>
     </point>
     <point>
-    <value>0.1568</value>
+      <value>0.1568</value>
       <nits>64.2686</nits>
     </point>
     <point>
