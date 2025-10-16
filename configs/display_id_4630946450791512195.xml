@@ -272,12 +272,44 @@ SPDX-License-Identifier: BSD-3-Clause-Clear
 
     <sdrHdrRatioMap>
       <point>
-        <sdrNits>2.000</sdrNits>
-        <hdrRatio>8.000</hdrRatio>
+        <sdrNits>2.0</sdrNits>
+        <hdrRatio>8.0</hdrRatio>
       </point>
       <point>
-        <sdrNits>500.000</sdrNits>
-        <hdrRatio>1.5</hdrRatio>
+        <sdrNits>50.0</sdrNits>
+        <hdrRatio>7.0</hdrRatio>
+      </point>
+      <point>
+        <sdrNits>100.0</sdrNits>
+        <hdrRatio>6.0</hdrRatio>
+      </point>
+      <point>
+        <sdrNits>200.0</sdrNits>
+        <hdrRatio>5.0</hdrRatio>
+      </point>
+      <point>
+        <sdrNits>300.0</sdrNits>
+        <hdrRatio>4.0</hdrRatio>
+      </point>
+      <point>
+        <sdrNits>350.0</sdrNits>
+        <hdrRatio>3.4</hdrRatio>
+      </point>
+      <point>
+        <sdrNits>500.0</sdrNits>
+        <hdrRatio>2.4</hdrRatio>
+      </point>
+      <point>
+        <sdrNits>650.0</sdrNits>
+        <hdrRatio>1.84</hdrRatio>
+      </point>
+      <point>
+        <sdrNits>720.0</sdrNits>
+        <hdrRatio>1.67</hdrRatio>
+      </point>
+      <point>
+        <sdrNits>782.4283</sdrNits>
+        <hdrRatio>1.53</hdrRatio>
       </point>
     </sdrHdrRatioMap>
   </highBrightnessMode>
