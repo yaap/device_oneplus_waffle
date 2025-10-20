@@ -8,9 +8,9 @@ odm/etc/acdbdata/FTM/workspaceFileXml.qwsp
 odm/etc/acdbdata/acdb_cal.acdb;SYMLINK=vendor/etc/acdbdata/pineapple_mtp/acdb_cal.acdb
 
 # Audio configs
-odm/etc/mixer_paths.xml
-odm/etc/resourcemanager.xml
-odm/etc/usecaseKvManager.xml
+odm/etc/mixer_paths.xml;SYMLINK=vendor/etc/audio/sku_pineapple/mixer_paths_pineapple_mtp.xml
+odm/etc/resourcemanager.xml;SYMLINK=vendor/etc/audio/sku_pineapple/resourcemanager_pineapple_mtp.xml
+odm/etc/usecaseKvManager.xml;SYMLINK=vendor/etc/usecaseKvManager.xml
 
 # Audio firmware
 odm/firmware/tfa98xx.cnt
