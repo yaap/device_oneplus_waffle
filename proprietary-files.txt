@@ -70,7 +70,6 @@ odm/etc/lvacfs_params/2mic/audiozoom_8.txt
 odm/etc/lvacfs_params/2mic/audiozoom_9.txt
 
 # Camera
-odm/etc/camera/CameraHWConfiguration.config
 odm/etc/camera/camera_engmode.xml
 odm/etc/camera/cfr_bin/CFR_OPlus_EF017_UW_snapshot.bin
 odm/etc/camera/cfr_bin/CFR_imx581.bin

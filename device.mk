@@ -20,7 +20,8 @@ TARGET_SCREEN_WIDTH := 1080
 # Camera
 $(call soong_config_set,cameraservice,disable_torch_control,true)
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/camera/self_ois.ocfg:$(TARGET_COPY_OUT_ODM)/etc/camera/self_ois.ocfg
+    $(LOCAL_PATH)/configs/camera/self_ois.ocfg:$(TARGET_COPY_OUT_ODM)/etc/camera/self_ois.ocfg \
+    $(LOCAL_PATH)/configs/camera/CameraHWConfiguration.config:$(TARGET_COPY_OUT_ODM)/etc/camera/CameraHWConfiguration.config
 
 
 # DisplayConfig
