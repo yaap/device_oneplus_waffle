@@ -174,6 +174,7 @@ odm/firmware/pxlw_i7_panel_AA545_P_3_A0005_dsc_cmd.fw
 odm/firmware/pxlw_vtdr6130_fhd_plus_vid.fw
 
 # Sensors config
+my_product/etc/fusionlight_profile/fusionlight_Main_1_3.json:odm/etc/fusionlight.json
 odm/etc/sensor/config/json_list
 odm/etc/sensor/config/lanai_mtp_ak09919.json
 odm/etc/sensor/config/lanai_mtp_alsps.json

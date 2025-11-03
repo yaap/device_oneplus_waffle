@@ -40,6 +40,7 @@ PRODUCT_PACKAGES += \
     OPlusWifiResTarget
 
 # Sensors
+$(call soong_config_set,oplus_sensors,uses_nextgen_fusion_sensor,true)
 PRODUCT_PACKAGES += \
     vendor.lineage.oplus_als.service
 
