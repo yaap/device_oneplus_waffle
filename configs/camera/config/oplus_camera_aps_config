@@ -163,7 +163,7 @@
   "VendorTag": "com.oplus.mdhdr.enable",
   "Type": "Int32",
   "Count": "1",
-  "Value": "1"
+  "Value": "0"
 },
 
 {
@@ -280,8 +280,8 @@
   "Type": "Int32",
   "Count": "750",
   "Value": "
-            3,
-            0, 50, 60, 25, 0, 0,
+            7,
+            0, 50, 10, 25, 0, 0,
             6,
             0, 0, 0,
             250, 350, 700, 900, 300, 500, 900, 1200,
@@ -382,7 +382,7 @@
   "Count": "10",
   "Value": "
             5,
-            50, 0, 50, 20, 0, 0, 0,
+            50, 0, 50, 10, 0, 0, 0,
             18,
             260",
   "Comment": "
@@ -612,14 +612,14 @@
   "VendorTag": "com.oplus.fwkBeauty",
   "Type": "Int32",
   "Count": "1",
-  "Value": "1"
+  "Value": "0"
 },
 
 {
   "VendorTag": "com.oplus.fwkOmoji",
   "Type": "Int32",
   "Count": "1",
-  "Value": "1"
+  "Value": "0"
 },
 
 {
@@ -888,7 +888,7 @@
   "VendorTag": "com.oplus.asd.support.aimoon",
   "Type": "Int32",
   "Count": "1",
-  "Value": "1"
+  "Value": "0"
 },
 
 {
@@ -1063,7 +1063,7 @@
   "VendorTag": "com.oplus.params.offline.mfnr.support",
   "Type": "Int32",
   "Count": "1",
-  "Value": "1",
+  "Value": "0",
   "Comment": "offline MFNR support"
 },
 
@@ -1175,14 +1175,12 @@
 {
   "VendorTag": "com.oplus.aps.extension.support.algos",
     "Type": "String",
-    "Count": "8",
-    "Value": "aps_algo_turbo_hdr,
+    "Count": "6",
+    "Value": "aps_algo_fusion,
               aps_algo_couple_hdr,
               aps_algo_fusion,
               aps_algo_bokeh,
               aps_algo_rotate_mirror,
-              aps_algo_upscale,
-              aps_algo_mfnr,
               aps_algo_raw2yuv"
 },
 
@@ -1222,7 +1220,7 @@
     "VendorTag": "com.ocs.camera.ipu.meishe.filter.support",
     "Type": "Int32",
     "Count": "1",
-    "Value": "1"
+    "Value": "0"
 },
 
 {

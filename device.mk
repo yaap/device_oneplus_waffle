@@ -23,6 +23,11 @@ TARGET_SCREEN_WIDTH := 1080
 $(call soong_config_set,cameraservice,disable_torch_control,true)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/self_ois.ocfg:$(TARGET_COPY_OUT_ODM)/etc/camera/self_ois.ocfg \
+    $(LOCAL_PATH)/configs/camera/config/imx581:$(TARGET_COPY_OUT_ODM)/etc/camera/config/imx581 \
+    $(LOCAL_PATH)/configs/camera/config/lyt808:$(TARGET_COPY_OUT_ODM)/etc/camera/config/lyt808 \
+    $(LOCAL_PATH)/configs/camera/config/oplus_camera_algo_switch_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_camera_algo_switch_config \
+    $(LOCAL_PATH)/configs/camera/config/oplus_camera_aps_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_camera_aps_config \
+    $(LOCAL_PATH)/configs/camera/config/ov64b40_tele:$(TARGET_COPY_OUT_ODM)/etc/camera/config/ov64b40_tele \
     $(LOCAL_PATH)/configs/camera/CameraHWConfiguration.config:$(TARGET_COPY_OUT_ODM)/etc/camera/CameraHWConfiguration.config
 
 
