@@ -75,16 +75,11 @@ odm/etc/camera/cfr_bin/CFR_lyt808.bin
 odm/etc/camera/cfr_bin/CFR_ov64b40_tele.bin
 odm/etc/camera/config/camera_unit_config
 odm/etc/camera/config/camera_unit_feature_config.protobuf
-odm/etc/camera/config/imx581
 odm/etc/camera/config/imx615
-odm/etc/camera/config/lyt808
-odm/etc/camera/config/oplus_camera_algo_switch_config
 odm/etc/camera/config/oplus_camera_algo_traversal_config.json
-odm/etc/camera/config/oplus_camera_aps_config
 odm/etc/camera/config/oplus_camera_config
 odm/etc/camera/config/oplus_camera_preview_decision_config.json
 odm/etc/camera/config/oplus_preview_decision_params.json
-odm/etc/camera/config/ov64b40_tele
 odm/etc/camera/config/quick_visibility_white_list
 odm/etc/camera/config/video_beauty_default_config
 odm/etc/camera/settings_fdc.txt
