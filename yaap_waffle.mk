@@ -18,7 +18,7 @@ PRODUCT_NAME := yaap_waffle
 PRODUCT_DEVICE := waffle
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
-PRODUCT_MODEL := CPH2581
+PRODUCT_MODEL := CPH2573
 
 PRODUCT_AAPT_CONFIG := xxxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
@@ -32,8 +32,8 @@ TARGET_SCREEN_WIDTH := 1440
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceName=OP595DL1 \
-    DeviceProduct=CPH2581 \
+    DeviceProduct=CPH2573 \
     SystemDevice=OP595DL1 \
-    SystemName=CPH2581
+    SystemName=CPH2573
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus

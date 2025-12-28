@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 12 (CPH2581_16.0.0.300(EX01)).
+## are from OnePlus 12 (CPH2573_16.0.2.400(EX01)).
 
 # ACDB
 odm/etc/acdbdata/Audio_Parameter_Version.txt
@@ -723,6 +723,9 @@ odm/etc/camera/libiceainr_model.dlc
 odm/etc/camera/main_inv_mapxy_33x25.bin
 odm/etc/camera/main_mapxy_33x25.bin
 odm/etc/camera/media_profiles.xml
+odm/etc/camera/meishe_lut/800t_blues.bin
+odm/etc/camera/meishe_lut/800t_hdr.bin
+odm/etc/camera/meishe_lut/800t_sdr.bin
 odm/etc/camera/meishe_lut/ByYo3If
 odm/etc/camera/meishe_lut/Cold.cube.rgb.bin
 odm/etc/camera/meishe_lut/DL_A_MoneyBall.bin
@@ -1261,7 +1264,6 @@ odm/etc/camera/sticker/material/animoji/snowleopard_v_0_0_0_9.zip
 odm/etc/camera/tele_inv_mapxy_33x25.bin
 odm/etc/camera/tele_mapxy_33x25.bin
 odm/etc/camera/text_enhance_yuv_v1.tflite
-odm/etc/camera/v10_vamm_sig_norm_0408_8143_SIM.bin
 odm/etc/camera/tonemap/curve_lut_0
 odm/etc/camera/tonemap/curve_lut_1
 odm/etc/camera/tonemap/curve_lut_10
@@ -1371,7 +1373,6 @@ odm/lib64/libCOppLceTonemapAPI.so
 odm/lib64/libCS.so
 odm/lib64/libCaptureBokeh.so
 odm/lib64/libDeVIS.so
-odm/lib64/libDocRectification.so
 odm/lib64/libEIS.so;DISABLE_CHECKELF
 odm/lib64/libEISLive.so;DISABLE_CHECKELF
 odm/lib64/libFDClite.so
