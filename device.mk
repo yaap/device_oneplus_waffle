@@ -54,6 +54,11 @@ else
     PRODUCT_PACKAGES += op8650OpenDeltaOverlayVanilla
 endif
 
+# Keymint
+PRODUCT_PACKAGES += \
+    android.hardware.security.keymint3-service.strongbox.nxp \
+    android.hardware.weaver-service.nxp
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage \
