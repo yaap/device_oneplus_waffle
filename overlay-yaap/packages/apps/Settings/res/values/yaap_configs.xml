@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2025 YAAP
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <!-- Show haptic styles -->
+    <bool name="config_supportHapticProfiles">true</bool>
+
+    <!-- Show ltpo features -->
+    <bool name="config_supportLtpoFeatures">true</bool>
+
+    <!-- Hide VRR toggle -->
+    <bool name="config_disableVrrSetting">true</bool>
+
+</resources>
