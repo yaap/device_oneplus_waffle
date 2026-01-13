@@ -34,6 +34,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/config/ov64b40_tele:$(TARGET_COPY_OUT_ODM)/etc/camera/config/ov64b40_tele \
     $(LOCAL_PATH)/configs/camera/CameraHWConfiguration.config:$(TARGET_COPY_OUT_ODM)/etc/camera/CameraHWConfiguration.config
 
+# Display
+$(call soong_config_set,qtidisplay,bitclk_rate_permissive,true)
+
 # DisplayConfig
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display_id_4630946450791512195.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946450791512195.xml
