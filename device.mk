@@ -36,6 +36,7 @@ PRODUCT_COPY_FILES += \
 
 # Display
 $(call soong_config_set,qtidisplay,bitclk_rate_permissive,true)
+$(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
 
 # DisplayConfig
 PRODUCT_COPY_FILES += \
