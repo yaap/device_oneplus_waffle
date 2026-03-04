@@ -41,10 +41,14 @@ odm/vendor/firmware/antdtx.b08
 odm/vendor/firmware/antdtx.mdt
 
 # Audio
+odm/lib64/lib_lvacfs.so
+odm/lib64/liblvacfs_wrapper.so
 odm/lib64/libtfa98xx.so
 
 # Audio configs
-odm/etc/mixer_paths.xml;SYMLINK=vendor/etc/audio/sku_pineapple/mixer_paths_pineapple_mtp.xml
+odm/etc/mixer_paths.xml
+odm/etc/resourcemanager.xml
+odm/etc/usecaseKvManager.xml
 
 # Audio firmware
 odm/firmware/tfa98xx.cnt
