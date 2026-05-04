@@ -75,4 +75,8 @@
         <item>5</item> <item>0.6</item> <item>0.59</item>
         <item>5</item> <item>3.0</item> <item>3.0</item>
     </string-array>
+
+    <!-- Enable Oplus-specific super steady EIS for video recording.
+         Set to true on Oplus devices that support this vendor key. -->
+    <bool name="enable_oplus_video_stabilization">true</bool>
 </resources>
