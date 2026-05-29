@@ -2,4 +2,7 @@
 <resources>
 	<!-- the branch name to format URLs with -->
 	<string name="url_branch_name">full-signed-1</string>
+
+	<!-- Whether device supports A/B performance flashing -->
+	<item name="support_ab_perf_mode" type="bool">true</item>
 </resources>
