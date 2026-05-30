@@ -1540,11 +1540,8 @@ odm/lib64/libwrapper_te.so
 odm/lib64/libyuv2.so
 odm/lib64/libyuvwrapper.so
 odm/lib64/libzlib.so
-odm/lib64/vendor.oplus.hardware.camera_rfi-V1-ndk.so
 odm/lib64/vendor.oplus.hardware.camera_rfi-V1-service-impl.so
-odm/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk.so
 odm/lib64/vendor.oplus.hardware.sendextcamcmd-V1-service-impl.so
-odm/lib64/vendor.oplus.hardware.sendextcamcmd-V2-ndk.so
 vendor/bin/hw/vendor.qti.camera.provider-service_64
 vendor/etc/init/vendor.qti.camera.provider-service_64.rc
 vendor/etc/vintf/manifest/vendor.qti.camera.aon-impl.xml
@@ -1860,12 +1857,8 @@ vendor/lib64/libtriplecam_optical_zoom_control.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libtriplecam_video_optical_zoom.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libubifocus.so
 vendor/lib64/libvideoml.so
-vendor/lib64/vendor.oplus.hardware.camera.aon-V1-ndk_platform.so
 vendor/lib64/vendor.oplus.hardware.camera.aon-service-impl.so
-vendor/lib64/vendor.oplus.hardware.camera_rfi-V1-ndk.so;MODULE_SUFFIX=_vendor
-vendor/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
-vendor/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so
 vendor/lib64/vendor.qti.hardware.camera.aon-service-impl.so
 vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
@@ -2272,10 +2265,7 @@ odm/lib64/libdpaservice.so
 odm/lib64/vendor.oplus.hardware.displaycolorfeature-V1-ndk.so
 vendor/etc/oem_51_prj_OppoLTM8650_1689712162019.pfm
 vendor/lib64/libcwb_qcom_aidl.so
-vendor/lib64/vendor.oplus.hardware.cwb-V1-ndk.so
-vendor/lib64/vendor.oplus.hardware.cwb@1.0.so
 vendor/lib64/vendor.oplus.hardware.displaycolorfeature-V1-ndk.so;MODULE_SUFFIX=_vendor
-vendor/lib64/vendor.oplus.hardware.displaypanelfeature-V1-ndk.so;MODULE_SUFFIX=_vendor
 
 # Sensors
 vendor/lib64/libcwb_client_vendor.so
