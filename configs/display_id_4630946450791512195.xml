@@ -265,9 +265,9 @@ SPDX-License-Identifier: BSD-3-Clause-Clear
 
     <minimumLux>4500</minimumLux>
     <timing>
-      <timeWindowSecs>0</timeWindowSecs>  // Window in which we restrict HBM.
-      <timeMaxSecs>0</timeMaxSecs>         // Maximum time of HBM allowed in that window.
-      <timeMinSecs>0</timeMinSecs>          // Minimum time remaining required to switch
+      <timeWindowSecs>600</timeWindowSecs>   // Window in which we restrict HBM.
+      <timeMaxSecs>300</timeMaxSecs>         // Maximum time of HBM allowed in that window.
+      <timeMinSecs>30</timeMinSecs>          // Minimum time remaining required to switch
     </timing>                                //   HBM on for.
 
     <sdrHdrRatioMap>
