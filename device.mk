@@ -23,6 +23,7 @@ TARGET_SCREEN_HEIGHT := 2376
 TARGET_SCREEN_WIDTH := 1080
 
 # Camera
+$(call soong_config_set,libbinder,binder_vm_size_4mb,true)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/self_ois.ocfg:$(TARGET_COPY_OUT_ODM)/etc/camera/self_ois.ocfg \
     $(LOCAL_PATH)/configs/camera/config/imx581:$(TARGET_COPY_OUT_ODM)/etc/camera/config/imx581 \
