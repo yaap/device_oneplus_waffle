@@ -79,4 +79,10 @@
     <!-- Enable Oplus-specific super steady EIS for video recording.
          Set to true on Oplus devices that support this vendor key. -->
     <bool name="enable_oplus_video_stabilization">true</bool>
+
+    <!-- Enable Oplus-specific HDR video fix.
+         Set to true on Oplus devices that need vendor keys
+         com.oplus.video.dataspace, com.oplus.movie.hdr.enable,
+         and com.oplus.VideoColorBT709 for proper HDR (HLG 10 bit) video. -->
+    <bool name="needs_oplus_video_hdr_fix">true</bool>
 </resources>
