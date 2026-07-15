@@ -11,4 +11,6 @@
     <!-- Hide VRR toggle -->
     <bool name="config_disableVrrSetting">true</bool>
 
+    <!-- Whether eSIM power control is supported on this device -->
+    <bool name="config_supportEsimPowerControl">true</bool>
 </resources>
