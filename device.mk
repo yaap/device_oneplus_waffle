@@ -67,16 +67,6 @@ PRODUCT_PACKAGES += \
     OPlusSystemUIResTarget \
     OPlusWifiResTarget
 
-# Sensors
-$(call soong_config_set,oplus_sensors,uses_nextgen_fusion_sensor,true)
-$(call soong_config_set,oplus_sensors,wrapped_lib_name,sensors.qsh.so)
-PRODUCT_PACKAGES += \
-    vendor.lineage.oplus_als.service \
-    sensors.wrapper
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
-
 # Regional properties
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/root/vendor/odm/etc/22825/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/22825/build.default.prop \
