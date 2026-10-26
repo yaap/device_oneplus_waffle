@@ -40,6 +40,7 @@ $(call soong_config_set,surfaceflinger,frame_rate_category_min,10)
 $(call soong_config_set,surfaceflinger,arr_use_oplus_ltpo_rates,true)
 $(call soong_config_set,qtidisplay,sm8650_pxlw_vendor_namespace,vendor/oneplus/waffle)
 $(call soong_config_set,qtidisplay,sm8650_pxlw_hw_iris7,true)
+$(call soong_config_set,qtidisplay,pxlw_color_config_include,$(LOCAL_PATH)/display/include)
 
 # DisplayConfig
 PRODUCT_COPY_FILES += \
