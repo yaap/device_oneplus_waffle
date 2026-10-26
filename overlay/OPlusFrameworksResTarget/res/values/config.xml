@@ -67,11 +67,32 @@
         <item>40000</item>
     </integer-array>
 
+    <!-- The following two arrays specify which color space to use for display composition when a
+         certain color mode is active.
+         Composition color spaces are defined in android.view.Display.COLOR_MODE_xxx, and color
+         modes are defined in ColorDisplayManager.COLOR_MODE_xxx and
+         ColorDisplayManager.VENDOR_COLOR_MODE_xxx.
+         The color space COLOR_MODE_DEFAULT (0) lets the system select the most appropriate
+         composition color space for currently displayed content. Other values (e.g.,
+         COLOR_MODE_SRGB) override system selection; these other color spaces must be supported by
+         the device for for display composition.
+         If a color mode does not have a corresponding color space specified in this array, the
+         currently set composition color space will not be modified.-->
+    <integer-array name="config_displayCompositionColorModes">
+        <item>303</item>
+        <item>301</item>
+        <item>307</item>
+    </integer-array>
+    <integer-array name="config_displayCompositionColorSpaces">
+        <item>0</item> <!-- COLOR_MODE_DEFAULT -->
+        <item>0</item> <!-- COLOR_MODE_DEFAULT -->
+        <item>0</item> <!-- COLOR_MODE_DEFAULT -->
+    </integer-array>
+
     <!-- Array of desired screen brightness in nits corresponding to the lux values
          in the config_autoBrightnessLevels array. As with config_screenBrightnessMinimumNits and
          config_screenBrightnessMaximumNits, the display brightness is defined as the measured
          brightness of an all-white image.
-
          If this is defined then:
             - config_autoBrightnessLcdBacklightValues should not be defined
             - config_screenBrightnessNits must be defined
