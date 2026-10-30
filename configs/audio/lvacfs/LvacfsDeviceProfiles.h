@@ -5,6 +5,8 @@
 
 #pragma once
 
+#include <iterator>
+
 #include <LvacfsProfileConfig.h>
 
 #include "LvacfsProfiles.h"
@@ -23,6 +25,20 @@ inline int selectProfile(const Capture& capture) {
 
     if (!builtin && !wired && !usb) {
         return -1;
+    }
+
+    if (capture.source == AUDIO_SOURCE_CAMCORDER &&
+        (capture.channels == 3 || capture.channels == 4)) {
+        // Three-mic capture selects its profile from the vendor effect type.
+        static constexpr int kThreeMicProfiles[] = {
+                p::MIC_NORMAL_ID0, p::MIC_NORMAL, p::MIC_APP1, p::MIC_APP2,
+                -1,                p::MIC_NORMAL_ID0, p::MIC_NORMAL,
+        };
+        if (capture.effect_type < 0 ||
+            capture.effect_type >= static_cast<int>(std::size(kThreeMicProfiles))) {
+            return -1;
+        }
+        return kThreeMicProfiles[capture.effect_type];
     }
 
     switch (capture.scene) {
