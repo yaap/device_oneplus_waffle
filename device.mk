@@ -14,6 +14,7 @@ PRODUCT_PACKAGES += \
     tri-state-key-calibrate
 
 # Audio
+$(call soong_config_set,qtiaudio,lvacfs_headers,//device/oneplus/waffle:liblvacfs_device_headers)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     $(LOCAL_PATH)/configs/audio/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
