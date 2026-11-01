@@ -45,6 +45,13 @@ odm/lib64/libtfa98xx.so
 
 # Audio configs
 odm/etc/mixer_paths.xml;SYMLINK=vendor/etc/audio/sku_pineapple/mixer_paths_pineapple_mtp.xml
+odm/etc/resourcemanager.xml;SYMLINK=vendor/etc/audio/sku_pineapple/resourcemanager_pineapple_mtp.xml
+odm/etc/usecaseKvManager.xml;SYMLINK=vendor/etc/usecaseKvManager.xml
+vendor/etc/audio/sku_pineapple/audio_policy_configuration.xml
+vendor/etc/audio_policy_configuration.xml
+vendor/etc/audio_policy_volumes.xml
+vendor/etc/default_volume_tables.xml
+vendor/etc/card-defs.xml
 
 # Audio firmware
 odm/firmware/tfa98xx.cnt
