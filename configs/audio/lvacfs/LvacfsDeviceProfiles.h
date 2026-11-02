@@ -17,6 +17,7 @@ inline int selectProfile(const Capture& capture) {
     namespace p = ::lvacfs::profiles::config_2mic;
 
     const bool builtin = capture.device == AUDIO_DEVICE_IN_BUILTIN_MIC ||
+                         capture.device == AUDIO_DEVICE_IN_BACK_MIC ||
                          capture.device == AUDIO_DEVICE_IN_BLUETOOTH_SCO_HEADSET;
     const bool wired = capture.device == AUDIO_DEVICE_IN_WIRED_HEADSET;
     const bool usb = capture.device == AUDIO_DEVICE_IN_USB_ACCESSORY ||
